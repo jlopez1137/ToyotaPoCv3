@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Home - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn" title="Notifications">
+                <span class="icon-text">Notifications</span>
+                <span class="notifications-badge"></span>
+            </button>
+            <div class="profile-dropdown">
+                <button class="profile-btn">
+                    <span class="icon-text">User Profile</span>
+                    <span style="font-size: 0.75rem; margin-left: 4px;">▼</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html" class="active">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html">Operations & Fleet</a></li>
+                    <li><a href="comms.html">Communications Hub</a></li>
+                    <li><a href="governance.html">Enterprise Governance</a></li>
+                    <li><a href="brands.html">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <div class="page-header">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--spacing-sm);">
+                    <h1 class="page-title">Portal Home</h1>
+                    <span id="current-role-badge" class="role-badge">Executive</span>
+                </div>
+                <p class="page-subtitle">Executive overview and enterprise insights</p>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="brand-filter">
+                <label>Brand View:</label>
+                <select id="brand-filter">
+                    <option value="All TMHNA">All TMHNA</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Raymond">Raymond</option>
+                    <option value="THD">THD</option>
+                </select>
+            </div>
+
+            <!-- Role-Specific KPIs -->
+            <!-- Executive View -->
+            <div class="role-content active" data-role="Executive,all">
+                <div class="dashboard-grid">
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Total Revenue</div>
+                        <div class="kpi-value" data-kpi="revenue">$2.8B</div>
+                        <div class="kpi-change positive">+8.2% YoY</div>
+                    </div>
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Gross Margin</div>
+                        <div class="kpi-value" data-kpi="margin">24.3%</div>
+                        <div class="kpi-change positive">+1.8pp</div>
+                    </div>
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Service Contribution</div>
+                        <div class="kpi-value" data-kpi="service">$842M</div>
+                        <div class="kpi-change positive">+12.4% YoY</div>
+                    </div>
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Digital Mix</div>
+                        <div class="kpi-value" data-kpi="digital">34.7%</div>
+                        <div class="kpi-change positive">+5.1pp</div>
+                    </div>
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Fleet Uptime</div>
+                        <div class="kpi-value" data-kpi="fleetUptime">96.8%</div>
+                        <div class="kpi-change positive">+2.1pp</div>
+                    </div>
+                    <div class="kpi-card" data-role="Executive,all">
+                        <div class="kpi-label">Automation Backlog</div>
+                        <div class="kpi-value" data-kpi="automationBacklog">47</div>
+                        <div class="kpi-change negative">-3 this week</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Leader View -->
+            <div class="role-content hidden" data-role="Finance Leader">
+                <div class="dashboard-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Revenue</div>
+                        <div class="kpi-value" data-kpi="revenue">$2.8B</div>
+                        <div class="kpi-change positive">+8.2% YoY</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Operating Margin</div>
+                        <div class="kpi-value">18.7%</div>
+                        <div class="kpi-change positive">+1.2pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Service Margin</div>
+                        <div class="kpi-value">31.2%</div>
+                        <div class="kpi-change positive">+2.1pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Days Sales Outstanding</div>
+                        <div class="kpi-value">42 days</div>
+                        <div class="kpi-change positive">-3 days</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Cash Flow</div>
+                        <div class="kpi-value">$485M</div>
+                        <div class="kpi-change positive">+15.3%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Forecast Accuracy</div>
+                        <div class="kpi-value">94.2%</div>
+                        <div class="kpi-change positive">+1.8pp</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant Leader View -->
+            <div class="role-content hidden" data-role="Plant Leader">
+                <div class="dashboard-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Fleet Uptime</div>
+                        <div class="kpi-value" data-kpi="fleetUptime">96.8%</div>
+                        <div class="kpi-change positive">+2.1pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Safety Incidents</div>
+                        <div class="kpi-value">12</div>
+                        <div class="kpi-change negative">+2 this month</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Maintenance Efficiency</div>
+                        <div class="kpi-value">87.3%</div>
+                        <div class="kpi-change positive">+3.2pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Production Output</div>
+                        <div class="kpi-value">8,450 units</div>
+                        <div class="kpi-change positive">+5.1%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Quality Rate</div>
+                        <div class="kpi-value">98.7%</div>
+                        <div class="kpi-change positive">+0.3pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">On-Time Delivery</div>
+                        <div class="kpi-value">94.2%</div>
+                        <div class="kpi-change positive">+1.8pp</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dealer Manager View -->
+            <div class="role-content hidden" data-role="Dealer Manager">
+                <div class="dashboard-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Dealer Network Revenue</div>
+                        <div class="kpi-value">$1.2B</div>
+                        <div class="kpi-change positive">+9.4% YoY</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Service Attach Rate</div>
+                        <div class="kpi-value">69%</div>
+                        <div class="kpi-change positive">+4.2pp</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Average Deal Size</div>
+                        <div class="kpi-value">$142K</div>
+                        <div class="kpi-change positive">+3.1%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Customer Satisfaction</div>
+                        <div class="kpi-value">4.7/5.0</div>
+                        <div class="kpi-change positive">+0.2</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Parts Inventory Turn</div>
+                        <div class="kpi-value">6.2x</div>
+                        <div class="kpi-change positive">+0.4x</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Active Dealers</div>
+                        <div class="kpi-value">247</div>
+                        <div class="kpi-change positive">+8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role-Specific Alerts -->
+            <!-- Executive Alerts -->
+            <div class="role-content active" data-role="Executive,all">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Enterprise Alerts</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-warning">
+                            <strong>Finance Variance:</strong> Q4 forecast updated. Raymond margin projection adjusted -0.8pp due to supply chain impact.
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Plant Incident:</strong> Plant A safety protocol review required. Incident rate above threshold for November.
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>Critical Fleet Event:</strong> Regional fleet telematics detected 12 vehicles requiring immediate maintenance attention.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Leader Alerts -->
+            <div class="role-content hidden" data-role="Finance Leader">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Financial Alerts</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-warning">
+                            <strong>Forecast Variance:</strong> Q4 revenue forecast updated. Raymond margin projection adjusted -0.8pp. Review required.
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>Month-End Close:</strong> December financial close scheduled for January 5th. All submissions due by January 3rd.
+                        </div>
+                        <div class="alert alert-success">
+                            <strong>Budget Approval:</strong> 2025 operating budget approved by executive leadership. Distribution scheduled.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plant Leader Alerts -->
+            <div class="role-content hidden" data-role="Plant Leader">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Operations Alerts</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-danger">
+                            <strong>Safety Review Required:</strong> Plant A safety protocol review required. Incident rate above threshold for November.
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>Maintenance Alert:</strong> 12 vehicles require immediate maintenance attention. Schedule review needed.
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>Production Update:</strong> Q4 production targets exceeded by 5.1%. Capacity optimization opportunities identified.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dealer Manager Alerts -->
+            <div class="role-content hidden" data-role="Dealer Manager">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">Dealer Network Alerts</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-success">
+                            <strong>Network Growth:</strong> 8 new dealers added this quarter. Network expansion on track for 2025 targets.
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>Service Campaign:</strong> Q1 service campaign materials available. Training sessions scheduled for January.
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>Inventory Alert:</strong> Parts inventory levels below optimal in Region 2. Replenishment order recommended.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Changed This Week -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">What Changed This Week</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Policy Update</span>
+                            <span class="feed-time">2 days ago</span>
+                        </div>
+                        <div class="feed-title">Enterprise data governance policy v2.1 published</div>
+                        <div class="feed-content">Updated data retention and access control standards effective January 1st. All data owners notified.</div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">System Notice</span>
+                            <span class="feed-time">3 days ago</span>
+                        </div>
+                        <div class="feed-title">Financial reporting system maintenance window scheduled</div>
+                        <div class="feed-content">Scheduled maintenance: December 20th, 10 PM - 2 AM EST. Financial dashboards will be unavailable during this window.</div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Forecast Update</span>
+                            <span class="feed-time">4 days ago</span>
+                        </div>
+                        <div class="feed-title">Q4 enterprise revenue forecast revised</div>
+                        <div class="feed-content">Updated forecast reflects stronger service attach rates across all brands. Enterprise margin target maintained.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Alignment Status -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Strategic Alignment Status</h2>
+                </div>
+                <div class="panel-body">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-md);">
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Governance Cadence</div>
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">Monthly</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: var(--spacing-xs);">Next: Dec 18</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Standards Compliance</div>
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">94%</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: var(--spacing-xs);">+2% this quarter</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Decision Velocity</div>
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">12 days</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: var(--spacing-xs);">Avg. time to decision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

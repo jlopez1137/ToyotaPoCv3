@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Governance - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn"><span class="icon-text">Notifications</span><span class="notifications-badge"></span></button>
+            <div class="profile-dropdown">
+                <button class="profile-btn"><span class="icon-text">User Profile</span><span style="font-size: 0.75rem; margin-left: 4px;">▼</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html">Operations & Fleet</a></li>
+                    <li><a href="comms.html">Communications Hub</a></li>
+                    <li><a href="governance.html" class="active">Enterprise Governance</a></li>
+                    <li><a href="brands.html">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Enterprise Governance</h1>
+                <p class="page-subtitle">Decision paths, ownership, and enterprise standards</p>
+            </div>
+
+            <!-- Decision Paths and Ownership -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Decision Paths and Ownership</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Domain</th>
+                                    <th>Owner</th>
+                                    <th>Escalation Path</th>
+                                    <th>Decision Authority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Architecture</td>
+                                    <td>Enterprise Architecture Team</td>
+                                    <td>CTO → Executive Leadership</td>
+                                    <td>Architecture Review Board</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Definitions</td>
+                                    <td>Data Governance Council</td>
+                                    <td>CDO → Finance/Operations Leadership</td>
+                                    <td>Data Standards Committee</td>
+                                </tr>
+                                <tr>
+                                    <td>Financial Reporting</td>
+                                    <td>Finance Leadership</td>
+                                    <td>CFO → Executive Leadership</td>
+                                    <td>Finance Governance Board</td>
+                                </tr>
+                                <tr>
+                                    <td>Identity & Access</td>
+                                    <td>IT Security</td>
+                                    <td>CISO → Executive Leadership</td>
+                                    <td>Security Governance Council</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication Standards</td>
+                                    <td>Corporate Communications</td>
+                                    <td>VP Comms → Executive Leadership</td>
+                                    <td>Communication Review Board</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise Standards Library -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Enterprise Standards Library</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Standard</th>
+                                    <th>Category</th>
+                                    <th>Version</th>
+                                    <th>Status</th>
+                                    <th>Last Updated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Integration Standards</td>
+                                    <td>Architecture</td>
+                                    <td>2.1</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-11-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Definitions - Customer</td>
+                                    <td>Data</td>
+                                    <td>1.3</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-10-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Definitions - Asset</td>
+                                    <td>Data</td>
+                                    <td>1.2</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-10-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Identity and Access Policies</td>
+                                    <td>Security</td>
+                                    <td>3.0</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-12-01</td>
+                                </tr>
+                                <tr>
+                                    <td>System Disposition Framework</td>
+                                    <td>Architecture</td>
+                                    <td>1.5</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-09-30</td>
+                                </tr>
+                                <tr>
+                                    <td>Financial Reporting Standards</td>
+                                    <td>Finance</td>
+                                    <td>2.2</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-11-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication Hierarchy</td>
+                                    <td>Communications</td>
+                                    <td>1.1</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>2024-08-15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meeting Cadence -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Governance Meeting Cadence</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Meeting</th>
+                                    <th>Frequency</th>
+                                    <th>Next Meeting</th>
+                                    <th>Participants</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monthly Governance</td>
+                                    <td>Monthly</td>
+                                    <td>Dec 18, 2024</td>
+                                    <td>Executive Leadership, Domain Owners</td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Quarterly Review</td>
+                                    <td>Quarterly</td>
+                                    <td>Jan 15, 2025</td>
+                                    <td>Executive Leadership, Brand Leaders</td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Architecture Review Board</td>
+                                    <td>Bi-weekly</td>
+                                    <td>Dec 20, 2024</td>
+                                    <td>CTO, Architecture Team, Brand Tech Leads</td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Data Standards Committee</td>
+                                    <td>Monthly</td>
+                                    <td>Dec 22, 2024</td>
+                                    <td>CDO, Data Owners, Finance Leadership</td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Finance Governance Board</td>
+                                    <td>Monthly</td>
+                                    <td>Dec 19, 2024</td>
+                                    <td>CFO, Finance Leadership, Brand Finance</td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escalation Path Mock -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Escalation Framework</h2>
+                </div>
+                <div class="panel-body">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-md);">
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Level 1</div>
+                            <div style="font-weight: 600; margin-bottom: var(--spacing-xs);">Domain Owner</div>
+                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Initial decision authority</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Level 2</div>
+                            <div style="font-weight: 600; margin-bottom: var(--spacing-xs);">Functional Leadership</div>
+                            <div style="font-size: 0.85rem; color: var(--text-secondary);">CFO, CTO, CDO, VP Comms</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Level 3</div>
+                            <div style="font-weight: 600; margin-bottom: var(--spacing-xs);">Executive Leadership</div>
+                            <div style="font-size: 0.85rem; color: var(--text-secondary);">CEO, COO, Brand Presidents</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Level 4</div>
+                            <div style="font-weight: 600; margin-bottom: var(--spacing-xs);">Board</div>
+                            <div style="font-size: 0.85rem; color: var(--text-secondary);">Strategic decisions only</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

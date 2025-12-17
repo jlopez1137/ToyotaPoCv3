@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communications Hub - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn"><span class="icon-text">Notifications</span><span class="notifications-badge"></span></button>
+            <div class="profile-dropdown">
+                <button class="profile-btn"><span class="icon-text">User Profile</span><span style="font-size: 0.75rem; margin-left: 4px;">▼</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html">Operations & Fleet</a></li>
+                    <li><a href="comms.html" class="active">Communications Hub</a></li>
+                    <li><a href="governance.html">Enterprise Governance</a></li>
+                    <li><a href="brands.html">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Communications Hub</h1>
+                <p class="page-subtitle">Enterprise announcements, updates, and alerts</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="panel" id="comms-tabs">
+                <div class="panel-header">
+                    <h2 class="panel-title">Feed</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="tabs">
+                        <button class="tab active" data-tab="tab-all">All</button>
+                        <button class="tab" data-tab="tab-leadership">Leadership</button>
+                        <button class="tab" data-tab="tab-plant">Plant</button>
+                        <button class="tab" data-tab="tab-safety">Safety</button>
+                        <button class="tab" data-tab="tab-hr">HR</button>
+                        <button class="tab" data-tab="tab-it">IT</button>
+                        <button class="tab" data-tab="tab-operations">Operations</button>
+                    </div>
+
+                    <div id="tab-all" class="tab-content active">
+                        <!-- Pinned Announcement -->
+                        <div class="feed-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                            <div class="feed-header">
+                                <span class="feed-category">Leadership • Pinned</span>
+                                <span class="feed-time">2 hours ago</span>
+                            </div>
+                            <div class="feed-title">Q4 Enterprise Results</div>
+                            <div class="feed-content">Strong performance across all brands. Toyota, Raymond, and THD each exceeded targets, demonstrating the power of aligned execution. Thank you for your continued commitment to excellence.</div>
+                            <div class="feed-tags">
+                                <span class="pill">All TMHNA</span>
+                                <span class="pill">Executive</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Plant</span>
+                                <span class="feed-time">5 hours ago</span>
+                            </div>
+                            <div class="feed-title">Updated Safety Protocols</div>
+                            <div class="feed-content">New safety guidelines effective January 1st. All facilities must complete training module by December 15th. Contact your safety coordinator for scheduling.</div>
+                            <div class="feed-tags">
+                                <span class="pill">Plant A</span>
+                                <span class="pill">Plant B</span>
+                                <span class="pill">Safety</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">HR</span>
+                                <span class="feed-time">1 day ago</span>
+                            </div>
+                            <div class="feed-title">Open Enrollment Reminder</div>
+                            <div class="feed-content">Benefits open enrollment closes December 10th. Review your options in the HR portal. Questions? Contact HR at ext. 5555.</div>
+                            <div class="feed-tags">
+                                <span class="pill">All TMHNA</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">IT</span>
+                                <span class="feed-time">2 days ago</span>
+                            </div>
+                            <div class="feed-title">System Maintenance Window</div>
+                            <div class="feed-content">Scheduled maintenance: December 8th, 10 PM - 2 AM EST. Some systems may be unavailable. Plan accordingly.</div>
+                            <div class="feed-tags">
+                                <span class="pill">All TMHNA</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Operations</span>
+                                <span class="feed-time">3 days ago</span>
+                            </div>
+                            <div class="feed-title">Fleet Telematics Update</div>
+                            <div class="feed-content">New telematics dashboard now available. Track real-time fleet performance, maintenance schedules, and efficiency metrics across all brands.</div>
+                            <div class="feed-tags">
+                                <span class="pill">Toyota</span>
+                                <span class="pill">Raymond</span>
+                                <span class="pill">THD</span>
+                            </div>
+                        </div>
+
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Finance</span>
+                                <span class="feed-time">3 days ago</span>
+                            </div>
+                            <div class="feed-title">Q4 Forecast Update</div>
+                            <div class="feed-content">Enterprise revenue forecast revised upward. Service attach rates stronger than projected. Margin targets maintained.</div>
+                            <div class="feed-tags">
+                                <span class="pill">Finance</span>
+                                <span class="pill">All TMHNA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-leadership" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Leadership</span>
+                                <span class="feed-time">2 hours ago</span>
+                            </div>
+                            <div class="feed-title">Q4 Enterprise Results</div>
+                            <div class="feed-content">Strong performance across all brands. Toyota, Raymond, and THD each exceeded targets.</div>
+                        </div>
+                    </div>
+
+                    <div id="tab-plant" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Plant</span>
+                                <span class="feed-time">5 hours ago</span>
+                            </div>
+                            <div class="feed-title">Updated Safety Protocols</div>
+                            <div class="feed-content">New safety guidelines effective January 1st. All facilities must complete training module by December 15th.</div>
+                        </div>
+                    </div>
+
+                    <div id="tab-safety" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Safety</span>
+                                <span class="feed-time">5 hours ago</span>
+                            </div>
+                            <div class="feed-title">Updated Safety Protocols</div>
+                            <div class="feed-content">New safety guidelines effective January 1st. All facilities must complete training module by December 15th.</div>
+                        </div>
+                    </div>
+
+                    <div id="tab-hr" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">HR</span>
+                                <span class="feed-time">1 day ago</span>
+                            </div>
+                            <div class="feed-title">Open Enrollment Reminder</div>
+                            <div class="feed-content">Benefits open enrollment closes December 10th. Review your options in the HR portal.</div>
+                        </div>
+                    </div>
+
+                    <div id="tab-it" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">IT</span>
+                                <span class="feed-time">2 days ago</span>
+                            </div>
+                            <div class="feed-title">System Maintenance Window</div>
+                            <div class="feed-content">Scheduled maintenance: December 8th, 10 PM - 2 AM EST. Some systems may be unavailable.</div>
+                        </div>
+                    </div>
+
+                    <div id="tab-operations" class="tab-content">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-category">Operations</span>
+                                <span class="feed-time">3 days ago</span>
+                            </div>
+                            <div class="feed-title">Fleet Telematics Update</div>
+                            <div class="feed-content">New telematics dashboard now available. Track real-time fleet performance across all brands.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('#comms-tabs .tab');
+            const tabContents = document.querySelectorAll('#comms-tabs .tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetId = tab.getAttribute('data-tab');
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(tc => tc.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

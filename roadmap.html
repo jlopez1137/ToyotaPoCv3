@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enablement Roadmap - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn"><span class="icon-text">Notifications</span><span class="notifications-badge"></span></button>
+            <div class="profile-dropdown">
+                <button class="profile-btn"><span class="icon-text">User Profile</span><span style="font-size: 0.75rem; margin-left: 4px;">▼</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html">Operations & Fleet</a></li>
+                    <li><a href="comms.html">Communications Hub</a></li>
+                    <li><a href="governance.html">Enterprise Governance</a></li>
+                    <li><a href="brands.html">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html" class="active">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Enablement Roadmap</h1>
+                <p class="page-subtitle">Enterprise capability delivery timeline</p>
+            </div>
+
+            <div class="roadmap-lanes">
+                <div class="roadmap-lane">
+                    <div class="lane-header">Now</div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Identity Foundation</div>
+                        <div class="roadmap-item-desc">Enterprise identity and access management platform deployed. Single sign-on enabled across Toyota, Raymond, and THD.</div>
+                        <div class="roadmap-item-theme">Theme: Identity</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Data Definitions</div>
+                        <div class="roadmap-item-desc">Unified customer, asset, and margin definitions established. Chart of accounts harmonization complete.</div>
+                        <div class="roadmap-item-theme">Theme: Data Foundation</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Financial Dashboards</div>
+                        <div class="roadmap-item-desc">Enterprise financial intelligence portal live. Brand-level drill-down capabilities operational.</div>
+                        <div class="roadmap-item-theme">Theme: Financial Intelligence</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-lane">
+                    <div class="lane-header">Next</div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Comms Hub Integration</div>
+                        <div class="roadmap-item-desc">Expand communications hub to integrate finance alerts, operations events, and governance updates. Role-based targeting enhanced.</div>
+                        <div class="roadmap-item-theme">Theme: Communications</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Advanced Analytics</div>
+                        <div class="roadmap-item-desc">Predictive maintenance models, profitability forecasting, and automation ROI tracking. AI-powered insights.</div>
+                        <div class="roadmap-item-theme">Theme: Data Foundation</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Mobile Access</div>
+                        <div class="roadmap-item-desc">Mobile-optimized portal experience. Plant floor kiosk views. Dealer portal access.</div>
+                        <div class="roadmap-item-theme">Theme: Access</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Workflow Automation</div>
+                        <div class="roadmap-item-desc">Automated approval workflows for financial reporting, governance decisions, and operational changes.</div>
+                        <div class="roadmap-item-theme">Theme: Governance</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-lane">
+                    <div class="lane-header">Later</div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Real-time Collaboration</div>
+                        <div class="roadmap-item-desc">Cross-brand collaboration tools. Real-time decision support. Integrated planning surfaces.</div>
+                        <div class="roadmap-item-theme">Theme: Communications</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Extended Ecosystem</div>
+                        <div class="roadmap-item-desc">Dealer portal integration. Supplier connectivity. Customer self-service capabilities.</div>
+                        <div class="roadmap-item-theme">Theme: Integration</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-item-title">Advanced Governance</div>
+                        <div class="roadmap-item-desc">AI-assisted decision support. Automated compliance monitoring. Predictive risk management.</div>
+                        <div class="roadmap-item-theme">Theme: Governance</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

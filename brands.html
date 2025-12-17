@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands & Business Units - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn"><span class="icon-text">Notifications</span><span class="notifications-badge"></span></button>
+            <div class="profile-dropdown">
+                <button class="profile-btn"><span class="icon-text">User Profile</span><span style="font-size: 0.75rem; margin-left: 4px;">▼</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html">Operations & Fleet</a></li>
+                    <li><a href="comms.html">Communications Hub</a></li>
+                    <li><a href="governance.html">Enterprise Governance</a></li>
+                    <li><a href="brands.html" class="active">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Brands & Business Units</h1>
+                <p class="page-subtitle">Shared backbone, independent execution</p>
+            </div>
+
+            <!-- Brand Overview Panels -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                <div class="panel">
+                    <div class="panel-header" style="background: var(--toyota-red); color: white;">
+                        <h2 class="panel-title" style="color: white;">Toyota</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Revenue</div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">$1.6B</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Margin</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">25.1%</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Fleet Units</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">8,450</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Service Attach</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">68%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header" style="background: #0066cc; color: white;">
+                        <h2 class="panel-title" style="color: white;">Raymond</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Revenue</div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">$720M</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Margin</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">22.8%</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Fleet Units</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">3,200</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Service Attach</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">72%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header" style="background: #ff6600; color: white;">
+                        <h2 class="panel-title" style="color: white;">THD</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Revenue</div>
+                            <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">$480M</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Margin</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">23.9%</div>
+                        </div>
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Fleet Units</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">2,100</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Service Attach</div>
+                            <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary);">66%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shared Backbone -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Shared Enterprise Backbone</h2>
+                </div>
+                <div class="panel-body">
+                    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--spacing-lg); align-items: center; margin-bottom: var(--spacing-lg);">
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-md); font-size: 1.1rem;">What is Shared</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">✓</span>
+                                    Enterprise data platform
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">✓</span>
+                                    Unified financial definitions
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">✓</span>
+                                    Common integration standards
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">✓</span>
+                                    One TMHNA communication hub
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">✓</span>
+                                    Identity and access management
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center; font-size: 2rem; color: var(--text-light);">→</div>
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-md); font-size: 1.1rem;">What Remains Autonomous</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">•</span>
+                                    Brand-specific customer relationships
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">•</span>
+                                    Autonomous product strategy
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">•</span>
+                                    Independent operational decisions
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">•</span>
+                                    Brand-appropriate messaging
+                                </li>
+                                <li style="padding: var(--spacing-xs) 0; padding-left: var(--spacing-md); position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--toyota-red);">•</span>
+                                    Local dealer relationships
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: var(--bg-secondary); padding: var(--spacing-md); border-radius: var(--radius-md); text-align: center;">
+                        <p style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: var(--spacing-xs);">
+                            <strong>Shared identity, data, and integration.</strong> Independent customer relationships and execution.
+                        </p>
+                        <p style="color: var(--text-secondary);">
+                            Each brand leverages enterprise foundations to operate more efficiently while maintaining the autonomy that drives brand success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

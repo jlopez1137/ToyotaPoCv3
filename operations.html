@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations & Fleet - TMHNA Enterprise Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="logo">TMHNA</div>
+            <div class="search-box">
+                <input type="text" id="global-search" placeholder="Search portal...">
+            </div>
+        </div>
+        <div class="nav-right">
+            <select id="role-switcher" class="role-switcher">
+                <option value="Executive">Executive</option>
+                <option value="Finance Leader">Finance Leader</option>
+                <option value="Plant Leader">Plant Leader</option>
+                <option value="Dealer Manager">Dealer Manager</option>
+            </select>
+            <button class="notifications-btn"><span class="icon-text">Notifications</span><span class="notifications-badge"></span></button>
+            <div class="profile-dropdown">
+                <button class="profile-btn"><span class="icon-text">User Profile</span><span style="font-size: 0.75rem; margin-left: 4px;">▼</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Portal Home</a></li>
+                    <li><a href="finance.html">Financial Intelligence</a></li>
+                    <li><a href="operations.html" class="active">Operations & Fleet</a></li>
+                    <li><a href="comms.html">Communications Hub</a></li>
+                    <li><a href="governance.html">Enterprise Governance</a></li>
+                    <li><a href="brands.html">Brands & Business Units</a></li>
+                    <li><a href="roadmap.html">Enablement Roadmap</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="page-header">
+                <h1 class="page-title">Operations & Fleet</h1>
+                <p class="page-subtitle">Connected fleet insights and automation status</p>
+            </div>
+
+            <div class="brand-filter">
+                <label>Brand View:</label>
+                <select id="brand-filter">
+                    <option value="All TMHNA">All TMHNA</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Raymond">Raymond</option>
+                    <option value="THD">THD</option>
+                </select>
+            </div>
+
+            <!-- Connected Fleet Insights -->
+            <div class="dashboard-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Fleet Uptime</div>
+                    <div class="kpi-value" data-kpi="fleetUptime">96.8%</div>
+                    <div class="kpi-change positive">+2.1pp</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Fleet Utilization</div>
+                    <div class="kpi-value">78.4%</div>
+                    <div class="kpi-change positive">+3.2pp</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Safety Events</div>
+                    <div class="kpi-value">12</div>
+                    <div class="kpi-change negative">+2 this month</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Maintenance Risk</div>
+                    <div class="kpi-value">8.2%</div>
+                    <div class="kpi-change positive">-1.5pp</div>
+                </div>
+            </div>
+
+            <!-- Automation Status -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Automation Status</h2>
+                </div>
+                <div class="panel-body">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Active Deployments</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">47</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Backlog</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">23</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Incidents</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">3</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Avg. Deployment Time</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--text-primary);">18d</div>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Brand</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                    <th>Target Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Warehouse Automation Phase 2</td>
+                                    <td>Toyota</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>68%</td>
+                                    <td>2025-02-15</td>
+                                </tr>
+                                <tr>
+                                    <td>Distribution Center Upgrade</td>
+                                    <td>Raymond</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>45%</td>
+                                    <td>2025-03-01</td>
+                                </tr>
+                                <tr>
+                                    <td>Fleet Management System</td>
+                                    <td>THD</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td>0%</td>
+                                    <td>2025-04-10</td>
+                                </tr>
+                                <tr>
+                                    <td>Predictive Maintenance Rollout</td>
+                                    <td>Toyota</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>82%</td>
+                                    <td>2025-01-20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Stream -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Telematics Event Stream</h2>
+                </div>
+                <div class="panel-body">
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <select style="padding: var(--spacing-xs) var(--spacing-sm); border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+                            <option>All Events</option>
+                            <option>Maintenance Alerts</option>
+                            <option>Safety Incidents</option>
+                            <option>Performance Issues</option>
+                        </select>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Maintenance Alert</span>
+                            <span class="feed-time">2 hours ago</span>
+                        </div>
+                        <div class="feed-title">Vehicle #2847 - Scheduled maintenance due</div>
+                        <div class="feed-content">Fleet unit requires scheduled service. Next available slot: Dec 18, 2:00 PM. Location: Plant A.</div>
+                        <div class="feed-tags">
+                            <span class="pill">Toyota</span>
+                            <span class="pill">Plant A</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Performance Issue</span>
+                            <span class="feed-time">5 hours ago</span>
+                        </div>
+                        <div class="feed-title">Vehicle #1923 - Utilization below threshold</div>
+                        <div class="feed-content">Fleet unit utilization at 42% (threshold: 60%). Review assignment and routing optimization.</div>
+                        <div class="feed-tags">
+                            <span class="pill">Raymond</span>
+                            <span class="pill">Region 2</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Safety Incident</span>
+                            <span class="feed-time">1 day ago</span>
+                        </div>
+                        <div class="feed-title">Vehicle #3456 - Safety protocol triggered</div>
+                        <div class="feed-content">Automatic safety system activated. Incident logged. Review required within 24 hours.</div>
+                        <div class="feed-tags">
+                            <span class="pill">THD</span>
+                            <span class="pill">Plant B</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-category">Maintenance Alert</span>
+                            <span class="feed-time">1 day ago</span>
+                        </div>
+                        <div class="feed-title">Vehicle #4128 - Predictive maintenance alert</div>
+                        <div class="feed-content">AI model predicts component failure within 30 days. Schedule preventive maintenance.</div>
+                        <div class="feed-tags">
+                            <span class="pill">Toyota</span>
+                            <span class="pill">Region 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fleet Summary Table -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">Fleet Summary by Brand</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Total Units</th>
+                                    <th>Active</th>
+                                    <th>Uptime %</th>
+                                    <th>Avg. Utilization</th>
+                                    <th>Maintenance Due</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Toyota</td>
+                                    <td>8,450</td>
+                                    <td>8,182</td>
+                                    <td>97.2%</td>
+                                    <td>79.1%</td>
+                                    <td>142</td>
+                                </tr>
+                                <tr>
+                                    <td>Raymond</td>
+                                    <td>3,200</td>
+                                    <td>3,104</td>
+                                    <td>96.5%</td>
+                                    <td>76.8%</td>
+                                    <td>58</td>
+                                </tr>
+                                <tr>
+                                    <td>THD</td>
+                                    <td>2,100</td>
+                                    <td>2,031</td>
+                                    <td>96.7%</td>
+                                    <td>78.2%</td>
+                                    <td>41</td>
+                                </tr>
+                                <tr style="font-weight: 600;">
+                                    <td>Enterprise</td>
+                                    <td>13,750</td>
+                                    <td>13,317</td>
+                                    <td>96.8%</td>
+                                    <td>78.4%</td>
+                                    <td>241</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
